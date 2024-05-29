@@ -1,0 +1,116 @@
+.full {
+  background-image: url("../assets/images/bien2.jpg");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+.login_img {
+  width: 60%;
+  text-align: center;
+}
+.login_img img {
+  width: 60%;
+  object-fit: contain;
+}
+.login_form {
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+  border-radius: 10px;
+}
+.login_container {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  margin-top: 100px;
+}
+.login_form .user {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -9%;
+  left: 50%;
+  transform: translate(-50%, -9%);
+}
+.login_form .user img {
+  width: 100%;
+}
+.login_form h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.login_form {
+  width: 100%;
+}
+input#email,
+input#password,
+input#username {
+  padding: 7px;
+}
+.login_form input {
+  width: 100%;
+  padding: 2rem, 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  color: var(--heading-color);
+}
+
+.login_form input:focus {
+  outline: none;
+}
+.auth_btn {
+  background: #41c9e2 !important;
+  width: 100%;
+  color: white !important;
+}
+.login_form p {
+  font-size: 0.9rem;
+  color: white;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.login_form p a {
+  color: white;
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+
+.password-toggle {
+  position: absolute;
+  top: 57.5%;
+  right: 63px;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+}
+.password-toggle:hover {
+  opacity: 0.7; 
+}
+
+.password-toggle svg {
+  width: 20px;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+.input-password
+{
+  position: relative;
+}
+.eyeIcon
+{
+  position: absolute;
+  right: 3%;
+  top: 40%;
+  transform: translateY(-30%);
+  cursor: pointer;
+}
+.eyeIcon :hover
+{
+  opacity: .7;
+}

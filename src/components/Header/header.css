@@ -1,0 +1,127 @@
+.header {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  position: sticky;
+  top: 0px;
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
+}
+.logo {
+  max-width: 250px;
+}
+.logo img {
+  width: 40%;
+}
+
+.menu {
+  margin-bottom: 0;
+}
+
+.nav_item a {
+  text-decoration: none;
+  color: var(--hedaing-color);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.nav_item a:hover {
+  color: inherit;
+}
+.nav_item a.active_link {
+  color: var(--secondary-color);
+}
+
+.mobile_menu {
+  font-size: 1.3rem;
+  color: var(--heading-color);
+  display: none;
+}
+
+.sticky_header {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 8px -3px #ddd;
+  z-index: 999;
+}
+.btn li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 120px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  top: 85%;
+  right: 12%;
+}
+
+.dropdown-menu li {
+  max-height: 40px;
+}
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+.dropdown-menu a {
+  position: relative;
+  bottom: 20px;
+  text-decoration: none;
+  color: #333333;
+}
+.dropdown-menu a:hover {
+  color: #555555;
+}
+ul.dropdown-menu {
+  text-align: center;
+}
+.btn-logout{
+  position: relative;
+  padding: 10px 20px;
+  font-size: 10px;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+  &:after,&:before{
+      content: " ";
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      border: 0px solid #F4A460;
+      transition: all 1s;
+  }
+  &:after{
+      top: -1px;
+      left: -1px;
+      border-top:5px solid #F4A460;
+      border-left:5px solid #F4A460 ;
+  }
+  &:before{
+      bottom: -1px;
+      right: -1px;
+      border-bottom:  5px solid #F4A460;
+      border-right: 5px solid #F4A460;
+  }
+  &:hover{
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      &:before,&:after{
+          width: 100%;
+          height: 100%;
+      }
+  }
+}
